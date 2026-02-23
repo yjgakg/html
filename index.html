@@ -36,7 +36,7 @@
                 let response = await fetch(workerUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ key: key })
+                    body: JSON.stringify({ action: 'verify', key: key })
                 });
                 
                 let data = await response.json();
